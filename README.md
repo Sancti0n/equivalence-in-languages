@@ -15,4 +15,5 @@
 | sqrt | math.sqrt(v) | Math.sqrt(v) | sqrt(v) | 
 | max in array | max(v) | math.max(...v) | max(v) | |
 | if in array | 'a' in v | v.indexOf('a') | in_array('a', v) |  | 
-| repeat v | v*1 | v.repeat(1) | str_repeat(v, 1) | |
+| repeat v | v*1 | v.repeat(1) | str_repeat(v, 1) |  |
+| count value in v | v.count('a') |  | array_count_values(v) |  |
