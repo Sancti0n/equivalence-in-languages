@@ -16,5 +16,8 @@
 | max in array | max(v) | math.max(...v) | max(v) | |
 | if in array | 'a' in v | v.indexOf('a') | in_array('a', v) |  | 
 | repeat v | v*1 | v.repeat(1) | str_repeat(v, 1) |  |
-| count value in v | v.count('a') |  | array_count_values(v) |  |
+| count value in v | v.count('a') |  | substr_count(v, 'a') |  |
+| count values in arr | arr.count('a') |  | array_count_values(v) |  |
 | first upper in a string | title() | | ucwords(v) | |
+| substr string | v[0:len(v)] | v.substring(0, v.length) | substr(v, 0, strlen(v)) |  |
+| arr 0-n | list(range(0,n+1)) |  | range(0,n) | |
