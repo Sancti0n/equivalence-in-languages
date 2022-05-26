@@ -21,3 +21,5 @@
 | first upper in a string | title() | | ucwords(v) | |
 | substr string | v[0:len(v)] | v.substring(0, v.length) | substr(v, 0, strlen(v)) |  |
 | arr 0-n | list(range(0,n+1)) |  | range(0,n) | |
+| min alphabet | string.ascii_lowercase | String.fromCharCode(...Array(123).keys()).slice(97) | range('a', 'z') | |
+| maj alphabet | string.ascii_uppercase | String.fromCharCode(...Array(91).keys()).slice(65) | range('A', 'Z') | |
