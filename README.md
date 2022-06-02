@@ -20,8 +20,9 @@
 | count values in arr | arr.count('a') | const count = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0) | array_count_values(v) |  |
 | first upper in a string | title() | | ucwords(v) | |
 | substr string | v[0:len(v)] | v.substring(0, v.length) | substr(v, 0, strlen(v)) |  |
-| arr 0-n | list(range(0,n+1)) |  | range(0,n) | |
 | min alphabet | string.ascii_lowercase | String.fromCharCode(...Array(123).keys()).slice(97) | range('a', 'z') | |
 | maj alphabet | string.ascii_uppercase | String.fromCharCode(...Array(91).keys()).slice(65) | range('A', 'Z') | |
-| to lower case |  |  | strtolower(v) | |
-| to upper case |  |  | strtoupper(v) | |
+| to lower case | v.lower() | v.toLowerCase() | strtolower(v) | |
+| to upper case | v.upper() | v.toUpperCase() | strtoupper(v) | |
+| init array of n | list(range(0,n+1)) | [...Array(n+1).keys()] | range(0,n) | |
+| array sum | sum(arr) | arr.reduce((previousValue, currentValue) => previousValue + currentValue, 0) | array_sum(arr) | |
