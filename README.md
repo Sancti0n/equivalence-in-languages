@@ -16,8 +16,8 @@
 | max in array | max(v) | math.max(...v) | max(v) | |
 | if in array | 'a' in v | v.indexOf('a') | in_array('a', v) |  | 
 | repeat v | v*1 | v.repeat(1) | str_repeat(v, 1) |  |
-| count value in v | v.count('a') | (v.match(/a/g) \|\| []).length | substr_count(v, 'a') |  |
-| count values in arr | arr.count('a') | const count = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0) | array_count_values(v) |  |
+| count value in v | v.count('a') | (v.match(new RegExp(a, "g")) || []).length | substr_count(v, 'a') |  |
+| count values in arr | arr.count('a') | v.filter(elt => elt === a).length | array_count_values(v) |  |
 | first upper in a string | title() | | ucwords(v) | |
 | substr string | v[0:len(v)] | v.substring(0, v.length) | substr(v, 0, strlen(v)) |  |
 | min alphabet | string.ascii_lowercase | String.fromCharCode(...Array(123).keys()).slice(97) | range('a', 'z') | |
