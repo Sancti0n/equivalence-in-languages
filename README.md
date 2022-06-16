@@ -26,3 +26,4 @@
 | to upper case | v.upper() | v.toUpperCase() | strtoupper(v) | |
 | init array of n | list(range(0,n+1)) | [...Array(n+1).keys()] | range(0,n) | |
 | array sum | sum(arr) | arr.reduce((previousValue, currentValue) => previousValue + currentValue, 0) | array_sum(arr) | |
+| int to binary | bin(v)/format(v, "b") | | | |
