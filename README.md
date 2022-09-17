@@ -1,10 +1,22 @@
 # Equivalence in languages
 
+## Array -> string 
+```
+    Input -> v = ["S", "t", "r", "i", "n", "g"]
+
+    Python : "".join(v)
+    JavaScript : v.join("");
+    PHP : implode("", v);
+    Java : String str = String.join("", v);
+
+    Output -> "String"
+```
+
 
 |v : variable| Python | JavaScript | PHP | Java |
 | --- | --- | --- | --- |--- |
 | type of v | type(v) |  | | v.getClass().getSimpleName() |
-| array to string | "".join(v) | v.join("") | implode("", v) |  |
+| array to string | "".join(v) | v.join("") | implode("", v) | String.join("", v) |
 | string to array | list(v) | v.split("") | explode("", v)/str_split(v) | v.split("") |
 | add in array | arr.append(v) | arr.push(v) | $arr[] = v | |
 | reverse string | v[::-1] | v.split("").reverse().join("") | strrev(v) |  |
