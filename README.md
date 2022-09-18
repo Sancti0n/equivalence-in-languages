@@ -1,17 +1,60 @@
 # Equivalence in languages
 
 ## Array -> string 
+```php
+Input -> v = ["S", "t", "r", "i", "n", "g"]
+
+Python : "".join(v)
+JavaScript : v.join("")
+PHP : implode("", v)
+Java : String.join("", v)
+
+Output -> "String"
 ```
-    Input -> v = ["S", "t", "r", "i", "n", "g"]
 
-    Python : "".join(v)
-    JavaScript : v.join("");
-    PHP : implode("", v);
-    Java : String str = String.join("", v);
+## String -> array 
+```php
+Input -> v = "String"
 
-    Output -> "String"
+Python : list(v)
+JavaScript : v.split("")
+PHP : str_split(v) / explode(" ", v) if separator != ""
+Java : v.split("")
+
+Output -> ["S", "t", "r", "i", "n", "g"]
 ```
 
+## Array of lower case letters
+```php
+Python : list(string.ascii_lowercase)
+JavaScript : String.fromCharCode(...Array(123).keys()).slice(97).split("")
+PHP : range('a', 'z')
+Java : 
+
+Output -> ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+```
+
+## Array of upper case letters
+```php
+Python : list(string.ascii_uppercase)
+JavaScript : String.fromCharCode(...Array(91).keys()).slice(65).split("")
+PHP : range('A', 'Z')
+Java : 
+
+Output -> ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+```
+
+## Repeat a string
+```php
+Input -> v = "String", a = 3
+
+Python : v*a
+JavaScript : v.repeat(a)
+PHP : str_repeat(v, a)
+Java : v.repeat(a)
+
+Output -> "StringStringString"
+```
 
 |v : variable| Python | JavaScript | PHP | Java |
 | --- | --- | --- | --- |--- |
