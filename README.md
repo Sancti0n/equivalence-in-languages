@@ -13,7 +13,7 @@ Output -> "String"
 ```
 
 ## String -> array 
-```php
+```javascript
 Input -> v = "String"
 
 Python : list(v)
@@ -25,7 +25,7 @@ Output -> ["S", "t", "r", "i", "n", "g"]
 ```
 
 ## Array of lower case letters
-```php
+```java
 Python : list(string.ascii_lowercase)
 JavaScript : String.fromCharCode(...Array(123).keys()).slice(97).split("")
 PHP : range('a', 'z')
@@ -35,7 +35,7 @@ Output -> ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
 ```
 
 ## Array of upper case letters
-```php
+```python
 Python : list(string.ascii_uppercase)
 JavaScript : String.fromCharCode(...Array(91).keys()).slice(65).split("")
 PHP : range('A', 'Z')
@@ -59,8 +59,6 @@ Output -> "StringStringString"
 |v : variable| Python | JavaScript | PHP | Java |
 | --- | --- | --- | --- |--- |
 | type of v | type(v) |  | | v.getClass().getSimpleName() |
-| array to string | "".join(v) | v.join("") | implode("", v) | String.join("", v) |
-| string to array | list(v) | v.split("") | explode("", v)/str_split(v) | v.split("") |
 | add in array | arr.append(v) | arr.push(v) | $arr[] = v | |
 | reverse string | v[::-1] | v.split("").reverse().join("") | strrev(v) |  |
 | reverse array | v[::-1] | v.reverse() | array_reverse(v) |  |
@@ -72,13 +70,10 @@ Output -> "StringStringString"
 | sqrt | math.sqrt(v) | Math.sqrt(v) | sqrt(v) | 
 | max in array | max(v) | math.max(...v) | max(v) | |
 | if in array | 'a' in v | v.indexOf('a') | in_array('a', v) |  | 
-| repeat v | v*1 | v.repeat(1) | str_repeat(v, 1) | v.repeat(1) |
 | count value in v | v.count('a') | (v.match(new RegExp(a, "g")) || []).length | substr_count(v, 'a') |  |
 | count values in arr | arr.count('a') | v.filter(elt => elt === a).length | array_count_values(v) |  |
 | first upper in a string | title() | | ucwords(v) | |
 | substr string | v[0:len(v)] | v.substring(0, v.length) | substr(v, 0, strlen(v)) |  |
-| min alphabet | string.ascii_lowercase | String.fromCharCode(...Array(123).keys()).slice(97) | range('a', 'z') | |
-| maj alphabet | string.ascii_uppercase | String.fromCharCode(...Array(91).keys()).slice(65) | range('A', 'Z') | |
 | to lower case | v.lower() | v.toLowerCase() | strtolower(v) | |
 | to upper case | v.upper() | v.toUpperCase() | strtoupper(v) | |
 | init array of n | list(range(0,n+1)) | [...Array(n+1).keys()] | range(0,n) | |
