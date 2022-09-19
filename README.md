@@ -125,23 +125,113 @@ PHP : echo v / print_r(v) if v is an array
 Java : System.out.println(v)
 ```
 
+## Numerical value
+```python
+Python : int(v)
+JavaScript : parseInt(v)
+PHP : intval(v)
+Java : Integer.parseInt(v)
+```
+
+## String value
+```python
+Python : str(v)
+JavaScript : v.toString()
+PHP : strval(v)
+Java : String.valueOf(v)
+```
+
+## Sort array
+```python
+Python : v.sort(key=len, reverse=False)
+JavaScript : v.sort()
+PHP : sort(v)/rsort(v)
+Java : 
+```
+
+## SQRT
+```python
+Python : math.sqrt(v)
+JavaScript : Math.sqrt(v)
+PHP : sqrt(v)
+Java : 
+```
+
+## Maximum in array
+```python
+Python : max(v)
+JavaScript : math.max(...v)
+PHP : max(v)
+Java : 
+```
+
+## If elt in array
+```python
+Python : 'a' in v
+JavaScript : v.indexOf('a')
+PHP : in_array('a', v)
+Java : 
+```
+
+## Sum of one array
+```python
+Python : sum(arr)
+JavaScript : arr.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+PHP : array_sum(arr)
+Java : 
+```
+
+## Init array of n number
+```python
+Python : list(range(0,n+1))
+JavaScript : [...Array(n+1).keys()]
+PHP : range(0,n)
+Java : 
+```
+
+## String to lower case
+```python
+Python : v.lower()
+JavaScript : v.toLowerCase()
+PHP : strtolower(v)
+Java : 
+```
+
+## String to upper case
+```python
+Python : v.upper()
+JavaScript : v.toUpperCase()
+PHP : strtoupper(v)
+Java : 
+```
+
+## Substring
+```python
+Python : v[0:len(v)]
+JavaScript : v.substring(0, v.length)
+PHP : substr(v, 0, strlen(v))
+Java : 
+```
+
+## First upper in a string
+```python
+Python : title()
+JavaScript :
+PHP : ucwords(v)
+Java : 
+```
+
+## Int -> binary
+```python
+Python : bin(v)/format(v, "b")
+JavaScript :
+PHP :
+Java : 
+```
 
 |v : variable| Python | JavaScript | PHP | Java |
 | --- | --- | --- | --- |--- |
-| sort array | v.sort(key=len, reverse=False) | v.sort() | sort(v)/rsort(v) | |
-| numerical value | int(v) | parseInt(v) | intval(v) | Integer.parseInt(v) |
-| string value | str(v) | v.toString() | strval(v) | String.valueOf(v) |
-| replace value in str | | | | v.replace('a) |
-| sqrt | math.sqrt(v) | Math.sqrt(v) | sqrt(v) | 
-| max in array | max(v) | math.max(...v) | max(v) | |
-| if in array | 'a' in v | v.indexOf('a') | in_array('a', v) |  | 
+| replace value in str | | | | v.replace('a') | 
 | count value in v | v.count('a') | (v.match(new RegExp(a, "g")) || []).length | substr_count(v, 'a') |  |
 | count values in arr | arr.count('a') | v.filter(elt => elt === a).length | array_count_values(v) |  |
-| first upper in a string | title() | | ucwords(v) | |
-| substr string | v[0:len(v)] | v.substring(0, v.length) | substr(v, 0, strlen(v)) |  |
-| to lower case | v.lower() | v.toLowerCase() | strtolower(v) | |
-| to upper case | v.upper() | v.toUpperCase() | strtoupper(v) | |
-| init array of n | list(range(0,n+1)) | [...Array(n+1).keys()] | range(0,n) | |
-| array sum | sum(arr) | arr.reduce((previousValue, currentValue) => previousValue + currentValue, 0) | array_sum(arr) | |
-| int to binary | bin(v)/format(v, "b") | | | |
 | remove duplicates | list(set(v)) | [...new Set(v)] | | |
