@@ -1,7 +1,15 @@
 # Equivalence in languages
 
+## Type of v 
+```python
+Python : type(v)
+JavaScript : typeof v
+PHP : gettype(v)
+Java : v.getClass().getSimpleName()
+```
+
 ## Array -> string 
-```php
+```python
 Input -> v = ["S", "t", "r", "i", "n", "g"]
 
 Python : "".join(v)
@@ -13,7 +21,7 @@ Output -> "String"
 ```
 
 ## String -> array 
-```javascript
+```python
 Input -> v = "String"
 
 Python : list(v)
@@ -25,7 +33,7 @@ Output -> ["S", "t", "r", "i", "n", "g"]
 ```
 
 ## Array of lower case letters
-```java
+```python
 Python : list(string.ascii_lowercase)
 JavaScript : String.fromCharCode(...Array(123).keys()).slice(97).split("")
 PHP : range('a', 'z')
@@ -45,7 +53,7 @@ Output -> ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
 ```
 
 ## Repeat a string
-```php
+```python
 Input -> v = "String", a = 3
 
 Python : v*a
@@ -56,13 +64,70 @@ Java : v.repeat(a)
 Output -> "StringStringString"
 ```
 
+## Add elt in array
+```python
+Input -> arr = [], v = "S"
+
+Python : arr.append(v)
+JavaScript : arr.push(v)
+PHP : arr[] = v
+Java :
+    int arr[] = {1,2,3,4,5,6};
+    int n = arr.length;
+    int newArr[] = new int[n+1];
+    int value = 7;
+    for(int i = 0; i<n; i++) { newArr[i] = arr[i]; }
+    newArr[n] = value;
+    
+    Integer arr[] = {1,2,3,4,5,6};
+    ArrayList<Integer> arrayList = new ArrayList<Integer>(Arrays.asList(arr));
+    arrayList.add(7);
+    arr = arrayList.toArray(arr);  
+
+Output -> ["S"]
+```
+
+## Reverse a string
+```python
+Input -> v = "String"
+
+Python : v[::-1]
+JavaScript : v.split("").reverse().join("")
+PHP : strrev(v)
+Java :
+    char ch[]=v.toCharArray();  
+    String rev="";  
+    for(int i=ch.length-1;i>=0;i--) { rev+=ch[i]; }
+
+Output -> "StringStringString"
+```
+
+## Reverse an array
+```python
+Input -> v = ["S", "t", "r", "i", "n", "g"]
+
+Python : v[::-1]
+JavaScript : v.reverse()
+PHP : array_reverse(v)
+Java :
+    String [] myArray = {1,3,5,7,9};
+    Collections.reverse(Arrays.asList(myArray));
+    Arrays.asList(myArray);
+
+Output -> ["g", "n", "i", "r", "t", "S"]
+```
+
+## Show v
+```python
+Python : print(v)
+JavaScript : console.log(v)
+PHP : echo v / print_r(v) if v is an array
+Java : System.out.println(v)
+```
+
+
 |v : variable| Python | JavaScript | PHP | Java |
 | --- | --- | --- | --- |--- |
-| type of v | type(v) |  | | v.getClass().getSimpleName() |
-| add in array | arr.append(v) | arr.push(v) | $arr[] = v | |
-| reverse string | v[::-1] | v.split("").reverse().join("") | strrev(v) |  |
-| reverse array | v[::-1] | v.reverse() | array_reverse(v) |  |
-| show v | print(v) | console.log(v) | echo v/print_r(v) |System.out.println(v) |
 | sort array | v.sort(key=len, reverse=False) | v.sort() | sort(v)/rsort(v) | |
 | numerical value | int(v) | parseInt(v) | intval(v) | Integer.parseInt(v) |
 | string value | str(v) | v.toString() | strval(v) | String.valueOf(v) |
