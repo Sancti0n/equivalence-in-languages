@@ -229,9 +229,50 @@ PHP :
 Java : 
 ```
 
-|v : variable| Python | JavaScript | PHP | Java |
-| --- | --- | --- | --- |--- |
-| replace value in str | | | | v.replace('a') | 
-| count value in v | v.count('a') | (v.match(new RegExp(a, "g")) || []).length | substr_count(v, 'a') |  |
-| count values in arr | arr.count('a') | v.filter(elt => elt === a).length | array_count_values(v) |  |
-| remove duplicates | list(set(v)) | [...new Set(v)] | | |
+## Replace value in string
+```python
+Input -> v = "abracadabra"
+
+Python : v.replace("a", "i") 
+JavaScript : v.replace(/a/g, 'i') 
+PHP : str_replace("a", "i", v)
+Java : v.replace('a', 'i')
+
+Output -> "ibricidibri"
+```
+
+## Count value in string
+```python
+Input -> v = "abracadabra"
+
+Python : v.count("a")
+JavaScript : (v.match(new RegExp("a", "g")) || []).length
+PHP : substr_count(v, 'a')
+Java : v.length() - v.replace("a", "").length()
+
+Output -> 5
+```
+
+## Count value in array
+```python
+Input -> v = ["a","b","r","a","c","a","d","a","b","r","a"]
+
+Python : v.count("a")
+JavaScript : v.filter(elt => elt === a).length
+PHP : array_count_values(v)["a"]
+Java : String.join("", v).length() - String.join("", v).replace("a", "").length()
+
+Output -> 5
+```
+
+## Remove duplicates
+```python
+Input -> v = ["a","b","r","a","c","a","d","a","b","r","a"]
+
+Python : list(set(v))
+JavaScript : [...new Set(v)]
+PHP : array_unique(v)
+Java : 
+
+Output -> ['a', 'r', 'c', 'd', 'b']
+```
