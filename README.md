@@ -170,7 +170,9 @@ Java :
 Python : 'a' in v
 JavaScript : v.indexOf('a')
 PHP : in_array('a', v)
-Java : 
+Java :
+    List<String> L = Arrays.asList(v);
+    if (L.contains("a")) {return true}
 ```
 
 ## Sum of one array
