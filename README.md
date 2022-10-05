@@ -181,6 +181,8 @@ Python : sum(arr)
 JavaScript : arr.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
 PHP : array_sum(arr)
 Java : 
+    int sum = 0;
+    for (int i=0;i<arr.length;i++) sum = sum + arr[i];
 ```
 
 ## Init array of n number
