@@ -188,7 +188,7 @@ Java :
 ## Init array of n number
 ```python
 Python : list(range(0,n+1))
-JavaScript : [...Array(n+1).keys()]
+JavaScript : [...Array(n+1).keys()] / new Array(Math.max(...numbers)+ 1 - Math.min(...numbers)).fill().map((d, i) => i + Math.min(...numbers));
 PHP : range(0,n)
 Java : 
 ```
