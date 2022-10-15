@@ -122,7 +122,11 @@ Output -> ["g", "n", "i", "r", "t", "S"]
 Python : print(v)
 JavaScript : console.log(v)
 PHP : echo v / print_r(v) if v is an array
-Java : System.out.println(v)
+Java : 
+    System.out.println(v)
+    
+    import java.util.Arrays;
+    System.out.println(Arrays.toString(v));
 ```
 
 ## Numerical value
