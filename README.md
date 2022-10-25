@@ -200,9 +200,11 @@ Java : String.valueOf(v)
 ## Sort array
 ```python
 Python : v.sort(key=len, reverse=False)
-JavaScript : v.sort()
+JavaScript : v.sort() / if int array v.sort((a,b)=>a-b)
 PHP : sort(v)/rsort(v)
 Java : 
+    import java.util.Arrays
+    Arrays.sort(v)
 ```
 
 ## SQRT
@@ -335,4 +337,16 @@ PHP : array_unique(v)
 Java : 
 
 Output -> ['a', 'r', 'c', 'd', 'b']
+```
+
+## Array of strings in array of floats
+```python
+Input -> v = ["1", "2", "3"]
+
+Python : list(map(float, v))
+JavaScript : v.map(Number)
+PHP : array_map('floatval', v)
+Java :
+
+Output -> [1, 2, 3]
 ```
