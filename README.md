@@ -273,7 +273,7 @@ Java : v.toUpperCase()
 Python : v[0:len(v)]
 JavaScript : v.substring(0, v.length)
 PHP : substr(v, 0, strlen(v))
-Java : 
+Java : v.substring(0,v.length())
 ```
 
 ## First upper in a string
