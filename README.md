@@ -278,10 +278,17 @@ Java : v.substring(0,v.length())
 
 ## First upper in a string
 ```python
+Input -> v = "string"
+
 Python : title()
-JavaScript :
+JavaScript : 
+    let arr = v.split(" ")
+    for (let i=0;i<arr.length;i++) arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)
+    v = arr.join(" ")
 PHP : ucwords(v)
-Java : 
+Java :
+
+Output -> "String"
 ```
 
 ## Int -> binary
