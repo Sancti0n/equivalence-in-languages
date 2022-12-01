@@ -303,8 +303,8 @@ Java :
 ```python
 Input -> v = "abracadabra"
 
-Python : v.replace("a", "i") 
-JavaScript : v.replace(/a/g, 'i') 
+Python : v.replace("a", "i")
+JavaScript : v.replace(/a/g, 'i')
 PHP : str_replace("a", "i", v)
 Java : v.replace('a', 'i')
 
