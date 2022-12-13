@@ -187,7 +187,9 @@ Java :
 Python : int(v)
 JavaScript : parseInt(v)
 PHP : intval(v)
-Java : Integer.parseInt(v)
+Java : 
+    Integer.parseInt(v)
+    Double.parseDouble(v)
 ```
 
 ## String value
