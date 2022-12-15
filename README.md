@@ -53,6 +53,7 @@
 [Remove duplicates](https://github.com/Sancti0n/equivalence-in-languages#remove-duplicates)
 
 [Array of strings in array of floats](https://github.com/Sancti0n/equivalence-in-languages#array-of-strings-in-array-of-floats)
+[Clone array](https://github.com/Sancti0n/equivalence-in-languages#array-of-strings-in-array-of-floats)
 ## Type of v
 ```python
 Python : type(v)
@@ -163,10 +164,13 @@ Python : v[::-1]
 JavaScript : v.reverse()
 PHP : array_reverse(v)
 Java :
-    String [] myArray = {1,3,5,7,9};
-    Collections.reverse(Arrays.asList(myArray));
-    Arrays.asList(myArray);
+    int [] myArr = {1,3,5,7,9}
+    int[] r = new int[myArr.length];
+    for(int i=0;i<myArr.length; i++) {
+      r[i] = myArr[myArr.length-i-1];
+    }
 
+    Collections.reverse(Arrays.asList(v))
 Output -> ["g", "n", "i", "r", "t", "S"]
 ```
 
@@ -359,4 +363,15 @@ PHP : array_map('floatval', v)
 Java :
 
 Output -> [1, 2, 3]
+```
+
+## Clone array
+```python
+Python : arr = array.copy()
+JavaScript : let arr = [...array]
+PHP : a = v
+Java :
+    import java.util.Arrays
+    String[] array = {"a", "b", "c"}
+    String[] copiedArray = Arrays.copyOfRange(array, 0, array.length)
 ```
