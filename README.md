@@ -53,7 +53,8 @@
 [Remove duplicates](https://github.com/Sancti0n/equivalence-in-languages#remove-duplicates)
 
 [Array of strings in array of floats](https://github.com/Sancti0n/equivalence-in-languages#array-of-strings-in-array-of-floats)
-[Clone array](https://github.com/Sancti0n/equivalence-in-languages#array-of-strings-in-array-of-floats)
+
+[Clone array](https://github.com/Sancti0n/equivalence-in-languages#clone-array)
 ## Type of v
 ```python
 Python : type(v)
