@@ -8,6 +8,8 @@
 
 [Array of lower case letters](https://github.com/Sancti0n/equivalence-in-languages#array-of-lower-case-letters)
 
+[Array of upper case letters](https://github.com/Sancti0n/equivalence-in-languages#array-of-upper-case-letters)
+
 [Repeat a string](https://github.com/Sancti0n/equivalence-in-languages#repeat-a-string)
 
 [Add elt in array](https://github.com/Sancti0n/equivalence-in-languages#add-elt-in-array)
