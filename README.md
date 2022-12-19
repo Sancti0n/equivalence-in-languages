@@ -239,7 +239,7 @@ Python : 'a' in v
 JavaScript : v.indexOf('a')
 PHP : in_array('a', v) / str_contains(v, 'a')
 Java :
-    import java.util.*
+    import java.util.Arrays
     return Arrays.asList(v).contains("a")
 ```
 
