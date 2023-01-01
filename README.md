@@ -378,3 +378,5 @@ Java :
     String[] array = {"a", "b", "c"}
     String[] copiedArray = Arrays.copyOfRange(array, 0, array.length)
 ```
+
+Test
