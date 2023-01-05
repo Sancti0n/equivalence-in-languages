@@ -228,7 +228,7 @@ Java :
 ## Maximum in array
 ```python
 Python : max(v)
-JavaScript : math.max(...v)
+JavaScript : Math.max(...v)
 PHP : max(v)
 Java : 
 ```
