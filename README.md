@@ -303,7 +303,7 @@ Output -> "String"
 ## Int -> binary
 ```python
 Python : bin(v)/format(v, "b")
-JavaScript :
+JavaScript : v.toString(2)
 PHP :
 Java : 
 ```
