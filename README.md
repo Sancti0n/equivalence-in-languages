@@ -57,6 +57,9 @@
 [Array of strings in array of floats](https://github.com/Sancti0n/equivalence-in-languages#array-of-strings-in-array-of-floats)
 
 [Clone array](https://github.com/Sancti0n/equivalence-in-languages#clone-array)
+
+[Concat array](https://github.com/Sancti0n/equivalence-in-languages#concat-arrays)
+
 ## Type of v
 ```python
 Python : type(v)
