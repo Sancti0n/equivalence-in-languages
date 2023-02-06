@@ -258,7 +258,10 @@ Java :
 Python : list(range(0,n+1))
 JavaScript : [...Array(n+1).keys()] / new Array(Math.max(...numbers)+ 1 - Math.min(...numbers)).fill().map((d, i) => i + Math.min(...numbers));
 PHP : range(0,n)
-Java : 
+Java :
+    import java.util.Arrays;
+    int[] arr = new int[n];
+    Arrays.setAll(arr, i->i+1); / for reversed array : Arrays.setAll(arr, i->n-i);
 ```
 
 ## String to lower case
@@ -377,4 +380,23 @@ Java :
     import java.util.Arrays
     String[] array = {"a", "b", "c"}
     String[] copiedArray = Arrays.copyOfRange(array, 0, array.length)
+```
+
+## Concat arrays
+```python
+Input -> arr1 = [1,2,3], arr2 = [4,5,6]
+Python : arr1 + arr2
+JavaScript : arr1.concat(arr2)
+PHP : array_merge($arr1, $arr2);
+Java :
+    import java.util.Arrays;
+    int[] array1 = {1, 2, 3};
+    int[] array2 = {4, 5, 6};
+
+    int aLen = array1.length;
+    int bLen = array2.length;
+    int[] result = new int[aLen + bLen];
+
+    System.arraycopy(array1, 0, result, 0, aLen);
+    System.arraycopy(array2, 0, result, aLen, bLen);
 ```
