@@ -97,7 +97,10 @@ Output -> ["S", "t", "r", "i", "n", "g"]
 Python : list(string.ascii_lowercase)
 JavaScript : String.fromCharCode(...Array(123).keys()).slice(97).split("")
 PHP : range('a', 'z')
-Java : 
+Java :
+    String w = "";
+    for (char c = 'a'; c <= 'z'; c++) w += c;
+    String[] arr = w.split("");
 
 Output -> ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 ```
@@ -107,7 +110,10 @@ Output -> ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
 Python : list(string.ascii_uppercase)
 JavaScript : String.fromCharCode(...Array(91).keys()).slice(65).split("")
 PHP : range('A', 'Z')
-Java : 
+Java :
+    String w = "";
+    for (char c = 'A'; c <= 'Z'; c++) w += c;
+    String[] arr = w.split("");
 
 Output -> ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 ```
