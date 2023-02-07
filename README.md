@@ -203,7 +203,7 @@ Java :
 Python : int(v)
 JavaScript : parseInt(v)
 PHP : intval(v)
-Java : 
+Java :
     Integer.parseInt(v)
     Double.parseDouble(v)
 ```
@@ -221,7 +221,7 @@ Java : String.valueOf(v)
 Python : v.sort(key=len, reverse=False)
 JavaScript : v.sort() / if int array v.sort((a,b)=>a-b)
 PHP : sort(v)/rsort(v)
-Java : 
+Java :
     import java.util.Arrays
     Arrays.sort(v)
 ```
@@ -239,7 +239,7 @@ Java :
 Python : max(v)
 JavaScript : Math.max(...v)
 PHP : max(v)
-Java : 
+Java :
 ```
 
 ## If elt in array
@@ -257,7 +257,7 @@ Java :
 Python : sum(arr)
 JavaScript : arr.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
 PHP : array_sum(arr)
-Java : 
+Java :
     int sum = 0;
     for (int i=0;i<arr.length;i++) sum = sum + arr[i];
 ```
@@ -302,7 +302,7 @@ Java : v.substring(0,v.length())
 Input -> v = "string"
 
 Python : title()
-JavaScript : 
+JavaScript :
     let arr = v.split(" ")
     for (let i=0;i<arr.length;i++) arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)
     v = arr.join(" ")
@@ -317,7 +317,7 @@ Output -> "String"
 Python : bin(v)/format(v, "b")
 JavaScript : v.toString(2)
 PHP :
-Java : 
+Java :
 ```
 
 ## Replace value in string
@@ -363,7 +363,7 @@ Input -> v = ["a","b","r","a","c","a","d","a","b","r","a"]
 Python : list(set(v))
 JavaScript : [...new Set(v)]
 PHP : array_unique(v)
-Java : 
+Java :
 
 Output -> ['a', 'r', 'c', 'd', 'b']
 ```
