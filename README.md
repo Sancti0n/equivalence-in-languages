@@ -351,7 +351,12 @@ Input -> v = ["a","b","r","a","c","a","d","a","b","r","a"]
 Python : v.count("a")
 JavaScript : v.filter(elt => elt === a).length
 PHP : array_count_values(v)["a"]
-Java : String.join("", v).length() - String.join("", v).replace("a", "").length()
+Java :
+    # for one character
+    String.join("", v).length() - String.join("", v).replace("a", "").length()
+
+    int count = 0;
+    for (int i=0;i<v.length;i++) if (v[i] == "a") count++;
 
 Output -> 5
 ```
