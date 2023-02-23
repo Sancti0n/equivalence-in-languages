@@ -1,64 +1,39 @@
 # Equivalence in languages
 
-[Type of v ](https://github.com/Sancti0n/equivalence-in-languages#type-of-v)
-
-[Array -> string](https://github.com/Sancti0n/equivalence-in-languages#array---string)
-
-[String -> array](https://github.com/Sancti0n/equivalence-in-languages#string---array)
-
-[Array of lower case letters](https://github.com/Sancti0n/equivalence-in-languages#array-of-lower-case-letters)
-
-[Array of upper case letters](https://github.com/Sancti0n/equivalence-in-languages#array-of-upper-case-letters)
-
-[Repeat a string](https://github.com/Sancti0n/equivalence-in-languages#repeat-a-string)
-
-[Add elt in array](https://github.com/Sancti0n/equivalence-in-languages#add-elt-in-array)
-
-[Reverse a string](https://github.com/Sancti0n/equivalence-in-languages#reverse-a-string)
-
-[Reverse an array](https://github.com/Sancti0n/equivalence-in-languages#reverse-an-array)
-
-[Show v](https://github.com/Sancti0n/equivalence-in-languages#show-v)
-
-[Numerical value](https://github.com/Sancti0n/equivalence-in-languages#numerical-value)
-
-[String value](https://github.com/Sancti0n/equivalence-in-languages#string-value)
-
-[Sort array](https://github.com/Sancti0n/equivalence-in-languages#sort-array)
-
-[SQRT](https://github.com/Sancti0n/equivalence-in-languages#sqrt)
-
-[Maximum in array](https://github.com/Sancti0n/equivalence-in-languages#maximum-in-array)
-
-[If elt in array](https://github.com/Sancti0n/equivalence-in-languages#if-elt-in-array)
-
-[Sum of one array](https://github.com/Sancti0n/equivalence-in-languages#sum-of-one-array)
-
-[Init array of n number](https://github.com/Sancti0n/equivalence-in-languages#init-array-of-n-number)
-
-[String to lower case](https://github.com/Sancti0n/equivalence-in-languages#string-to-lower-case)
-
-[String to upper case](https://github.com/Sancti0n/equivalence-in-languages#string-to-upper-case)
-
-[Substring](https://github.com/Sancti0n/equivalence-in-languages#substring)
-
-[First upper in a string](https://github.com/Sancti0n/equivalence-in-languages#first-upper-in-a-string)
-
-[Int -> binary](https://github.com/Sancti0n/equivalence-in-languages#int---binary)
-
-[Replace value in string](https://github.com/Sancti0n/equivalence-in-languages#replace-value-in-string)
-
-[Count value in string](https://github.com/Sancti0n/equivalence-in-languages#count-value-in-string)
-
-[Count value in array](https://github.com/Sancti0n/equivalence-in-languages#count-value-in-array)
-
-[Remove duplicates](https://github.com/Sancti0n/equivalence-in-languages#remove-duplicates)
-
-[Array of strings in array of floats](https://github.com/Sancti0n/equivalence-in-languages#array-of-strings-in-array-of-floats)
-
-[Clone array](https://github.com/Sancti0n/equivalence-in-languages#clone-array)
-
-[Concat array](https://github.com/Sancti0n/equivalence-in-languages#concat-arrays)
+- [Type of v ](https://github.com/Sancti0n/equivalence-in-languages#type-of-v)
+- [Array -> string](https://github.com/Sancti0n/equivalence-in-languages#array---string)
+- [String -> array](https://github.com/Sancti0n/equivalence-in-languages#string---array)
+- Alphabet Array
+    - [Array of lower case letters](https://github.com/Sancti0n/equivalence-in-languages#array-of-lower-case-letters)
+    - [Array of upper case letters](https://github.com/Sancti0n/equivalence-in-languages#array-of-upper-case-letters)
+- [Repeat a string](https://github.com/Sancti0n/equivalence-in-languages#repeat-a-string)
+- [Add elt in array](https://github.com/Sancti0n/equivalence-in-languages#add-elt-in-array)
+- Reverse
+    - [Reverse a string](https://github.com/Sancti0n/equivalence-in-languages#reverse-a-string)
+    - [Reverse an array](https://github.com/Sancti0n/equivalence-in-languages#reverse-an-array)
+- [Show v](https://github.com/Sancti0n/equivalence-in-languages#show-v)
+- [Numerical value](https://github.com/Sancti0n/equivalence-in-languages#numerical-value)
+- [String value](https://github.com/Sancti0n/equivalence-in-languages#string-value)
+- [Sort array](https://github.com/Sancti0n/equivalence-in-languages#sort-array)
+- [SQRT](https://github.com/Sancti0n/equivalence-in-languages#sqrt)
+- [Maximum in array](https://github.com/Sancti0n/equivalence-in-languages#maximum-in-array)
+- [If elt in array](https://github.com/Sancti0n/equivalence-in-languages#if-elt-in-array)
+- [Sum of one array](https://github.com/Sancti0n/equivalence-in-languages#sum-of-one-array)
+- [Init array of n number](https://github.com/Sancti0n/equivalence-in-languages#init-array-of-n-number)
+- Lower & upper case
+    - [String to lower case](https://github.com/Sancti0n/equivalence-in-languages#string-to-lower-case)
+    - [String to upper case](https://github.com/Sancti0n/equivalence-in-languages#string-to-upper-case)
+- [Substring](https://github.com/Sancti0n/equivalence-in-languages#substring)
+- [First upper in a string](https://github.com/Sancti0n/equivalence-in-languages#first-upper-in-a-string)
+- [Int -> binary](https://github.com/Sancti0n/equivalence-in-languages#int---binary)
+- [Replace value in string](https://github.com/Sancti0n/equivalence-in-languages#replace-value-in-string)
+- Count
+    - [Count value in string](https://github.com/Sancti0n/equivalence-in-languages#count-value-in-string)
+    - [Count value in array](https://github.com/Sancti0n/equivalence-in-languages#count-value-in-array)
+- [Remove duplicates](https://github.com/Sancti0n/equivalence-in-languages#remove-duplicates)
+- [Array of strings in array of floats](https://github.com/Sancti0n/equivalence-in-languages#array-of-strings-in-array-of-floats)
+- [Clone array](https://github.com/Sancti0n/equivalence-in-languages#clone-array)
+- [Concat array](https://github.com/Sancti0n/equivalence-in-languages#concat-arrays)
 
 ## Type of v
 ```python
