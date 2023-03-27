@@ -34,6 +34,7 @@
 - [Array of strings in array of floats](https://github.com/Sancti0n/equivalence-in-languages#array-of-strings-in-array-of-floats)
 - [Clone array](https://github.com/Sancti0n/equivalence-in-languages#clone-array)
 - [Concat array](https://github.com/Sancti0n/equivalence-in-languages#concat-arrays)
+- [Int to int array](https://github.com/Sancti0n/equivalence-in-languages#int-to-int-array)
 
 ## Type of v
 ```python
@@ -388,4 +389,20 @@ Java :
 
     System.arraycopy(array1, 0, result, 0, aLen);
     System.arraycopy(array2, 0, result, aLen, bLen);
+```
+
+## Int to int array
+```python
+Input -> v = 156
+Python: list(map(int, str(v)))
+JavaScript: Array.from(String(v), Number);
+PHP: array_map('intval', str_split($v));
+Java:
+    import java.util.ArrayList;
+    ArrayList<Integer> array = new ArrayList<Integer>();
+    do {
+        array.add(0, temp % 10);
+        temp /= 10;
+    } while (v > 0);
+Ouput -> [1,5,6]
 ```
