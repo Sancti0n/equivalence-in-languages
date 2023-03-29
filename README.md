@@ -277,7 +277,7 @@ Java : v.substring(0,v.length())
 ```python
 Input -> v = "string"
 
-Python : title()
+Python : v.title()
 JavaScript :
     let arr = v.split(" ")
     for (let i=0;i<arr.length;i++) arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)
