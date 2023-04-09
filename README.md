@@ -241,7 +241,7 @@ Java :
 ## Init array of n number
 ```python
 Python : list(range(0,n+1))
-JavaScript : [...Array(n+1).keys()] / new Array(Math.max(...numbers)+ 1 - Math.min(...numbers)).fill().map((d, i) => i + Math.min(...numbers));
+JavaScript : [...Array(n+1).keys()] / Array.from(Array(n)).map((e,i)=>i+1)
 PHP : range(0,n)
 Java :
     import java.util.Arrays;
