@@ -35,6 +35,7 @@
 - [Clone array](https://github.com/Sancti0n/equivalence-in-languages#clone-array)
 - [Concat array](https://github.com/Sancti0n/equivalence-in-languages#concat-arrays)
 - [Int to int array](https://github.com/Sancti0n/equivalence-in-languages#int-to-int-array)
+- [Multiply all values in array](https://github.com/Sancti0n/equivalence-in-languages#multiply-all-values-in-array)
 
 ## Type of v
 ```python
@@ -405,4 +406,20 @@ Java:
         temp /= 10;
     } while (v > 0);
 Ouput -> [1,5,6]
+```
+
+## Multiply all values in array
+```python
+Input -> v = [1,2,3]
+Python:
+    import math
+    math.prod(v)
+JavaScript: v.reduce((a, b)=> a*b, 1)
+PHP: array_product($v);
+Java:
+    int m = 1;
+    for(int i=0;i<v.length;i++) {
+        m *= v[i];
+    }
+Output -> 6
 ```
