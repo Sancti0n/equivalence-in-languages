@@ -217,6 +217,10 @@ Python : max(v)
 JavaScript : Math.max(...v)
 PHP : max(v)
 Java :
+    int max = v[0];
+    for (int i=1;i<v.length;i++) {
+        max = Math.max(max, v[i]);
+    }
 ```
 
 ## If elt in array
@@ -376,6 +380,7 @@ Java :
 ## Concat arrays
 ```python
 Input -> arr1 = [1,2,3], arr2 = [4,5,6]
+
 Python : arr1 + arr2
 JavaScript : arr1.concat(arr2)
 PHP : array_merge($arr1, $arr2);
@@ -390,36 +395,42 @@ Java :
 
     System.arraycopy(array1, 0, result, 0, aLen);
     System.arraycopy(array2, 0, result, aLen, bLen);
+
+Output -> [1,2,3,4,5,6]
 ```
 
 ## Int to int array
 ```python
 Input -> v = 156
-Python: list(map(int, str(v)))
-JavaScript: Array.from(String(v), Number);
-PHP: array_map('intval', str_split($v));
-Java:
+
+Python : list(map(int, str(v)))
+JavaScript : Array.from(String(v), Number);
+PHP : array_map('intval', str_split($v));
+Java :
     import java.util.ArrayList;
     ArrayList<Integer> array = new ArrayList<Integer>();
     do {
         array.add(0, temp % 10);
         temp /= 10;
     } while (v > 0);
+
 Ouput -> [1,5,6]
 ```
 
 ## Multiply all values in array
 ```python
 Input -> v = [1,2,3]
-Python:
+
+Python :
     import math
     math.prod(v)
-JavaScript: v.reduce((a, b)=> a*b, 1)
-PHP: array_product($v);
+JavaScript : v.reduce((a, b)=> a*b, 1)
+PHP : array_product($v);
 Java:
     int m = 1;
     for(int i=0;i<v.length;i++) {
         m *= v[i];
     }
+
 Output -> 6
 ```
