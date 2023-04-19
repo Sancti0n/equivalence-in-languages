@@ -434,3 +434,14 @@ Java:
 
 Output -> 6
 ```
+
+## Code Golf
+```python
+JavaScript:
+    Addition : madAdd=(a,b)=>a- -b
+    Soustraction : madSub=(a,b)=>a+~b+1
+    Multiplication : madMul=(a,b)=>~~(a/(1/b)+.5)
+    Division : madDiv=(a,b)=>a*b**-1
+    Modulus : madMod=(a,b)=>!b?NaN:a-b*~~(a/b)
+    Power : madPow=(a,b)=>!b?1:madPow(a,b-1)/(1/a)
+```
