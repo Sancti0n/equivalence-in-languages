@@ -444,4 +444,5 @@ JavaScript:
     Division : madDiv=(a,b)=>a*b**-1
     Modulus : madMod=(a,b)=>!b?NaN:a-b*~~(a/b)
     Power : madPow=(a,b)=>!b?1:madPow(a,b-1)/(1/a)
+    Infinity : f=x=>1/0
 ```
