@@ -350,6 +350,13 @@ Python : list(set(v))
 JavaScript : [...new Set(v)]
 PHP : array_unique(v)
 Java :
+    Integer arr[] = {1,2,3,7,3,4,5,7,1,2,6};
+    ArrayList<Integer> arrayList = new ArrayList<Integer>(Arrays.asList(arr));
+    Set<Integer> list2WithoutDuplicates = new LinkedHashSet<Integer>(arrayList);
+    arrayList.clear();
+    arrayList.addAll(list2WithoutDuplicates);
+    System.out.println(arrayList);
+    #[1, 2, 3, 7, 4, 5, 6]
 
 Output -> ['a', 'r', 'c', 'd', 'b']
 ```
